@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* CSS Reset */
+* {
+    margin: 0px;
+    padding: 0px;
+    scroll-behavior: smooth;
+    /* font-family: 'Poppins', sans-serif; */
+}
+
+/* Navigation Bar Styling */
+
+#navbar {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0%;
+    background-color: white;
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* #navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.3;
+} */
+
+/* Logo and Image  */
+
+.logo {
+    margin: 10px 20px;
+}
+
+.logo img {
+    height: 60px;
+    margin: 3px 6px;
+}
+
+/* 
+#navbar {
+    position: relative;
+} */
+
+#navbar ul {
+    display: flex;
+}
+
+#navbar ul li {
+    /* color: white; */
+    list-style: none;
+    font-size: 1.2rem;
+}
+
+#navbar ul li a {
+    /* display: block; */
+    color: black;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover {
+    color: white;
+    background-color: #e34d3c;
+}
+
+/* Navigation Bar Ends Here */
+
+
+/* Home Section */
+
+#home {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3px 180px;
+    height: 850px;
+}
+
+#home::before {
+    background: url('./images/bg1.jpg.jpg') no-repeat center center/cover;
+    content: "";
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: -1;
+    /* opacity: 0.9; */
+}
+
+#home h1 {
+    margin-top: 70px;
+    color: white;
+    text-align: center;
+}
+
+#home p {
+    color: white;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+/* Services Section */
+
+/* .services-container {
+    margin-top: 100px;
+} */
+
+#services {
+    font-family: 'Poppins', sans-serif;
+    margin: 40px;
+    display: flex;
+}
+
+#services .box {
+    border: 2px solid brown;
+    padding: 30px;
+    margin: 3px 25px;
+    margin-bottom: 20px;
+    border-radius: 23px;
+    background-color: #f2f2f2;
+    box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.4);
+}
+
+#services .box:hover {
+    background-color: #e34d3c;
+    color: white;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+#services .box img {
+    display: block;
+    margin: auto;
+    height: 200px;
+}
+
+/* Services Section End */
+
+
+
+
+
+/* Contact Section  */
+
+#contact {
+    position: relative;
+}
+
+#contact::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 115%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url(./images/contact.jpg) no-repeat center center/cover;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 20px 20px;
+}
+
+
+.contact-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 34px;
+}
+
+.contact-box input,
+.contact-box textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 0.9rem;
+}
+
+.contact-box label {
+    font-size: 1.2rem;
+}
+
+.foot {
+    text-align: center;
+    padding: 12px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Utility Classes */
+
+.primary {
+    font-size: 2.8rem;
+    padding: 21px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.secondary {
+    font-size: 2.3rem;
+    padding: 21px;
+}
+
+.btn {
+    padding: 6px 20px;
+    border: 2px solid #e34d3c;
+    background-color: #e34d3c;
+    color: white;
+    font-size: 1.3rem;
+    cursor: pointer;
+    margin: 20px;
+}
+
+.btn-submit {
+    float: right;
+    padding: 6px 20px;
+    border: 2px solid #e34d3c;
+    background-color: #e34d3c;
+    color: white;
+    font-size: 1.3rem;
+    cursor: pointer;
+    margin: 20px;
+}
+
+.btn-submit:hover {
+    background-color: #b03a2d;
+    border: 2px solid #b03a2d;
+}
+
+.btn:hover {
+    background-color: #b03a2d;
+    border: 2px solid #b03a2d;
+}
+
+.center {
+    text-align: center;
+    margin-top: 40px;
+}
